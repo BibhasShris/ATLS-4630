@@ -1,11 +1,11 @@
-const colorBtn = document.getElementById("colorBtn");
-const textBtn = document.getElementById("textBtn");
+const colorButton = document.getElementById("colorButton");
+const textButton = document.getElementById("textButton");
 const message = document.getElementById("message");
 const nameInput = document.getElementById("nameInput");
 const title = document.getElementById("title");
 
 // CSS manipulation & 1st event listener
-colorBtn.addEventListener("click", () => {
+colorButton.addEventListener("click", () => {
   document.body.style.backgroundColor =
     document.body.style.backgroundColor === "rgb(26, 26, 26)"
       ? "rgba(15, 12, 35, 1)"
@@ -13,7 +13,7 @@ colorBtn.addEventListener("click", () => {
 });
 
 // Non-CSS manipulation & 1st event listener
-textBtn.addEventListener("click", () => {
+textButton.addEventListener("click", () => {
   message.innerText =
     message.innerText === "Welcome to the DOM"
       ? "The DOM welcomes you!"
