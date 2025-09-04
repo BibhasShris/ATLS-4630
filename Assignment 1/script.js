@@ -1,26 +1,28 @@
-// Select elements
 const colorBtn = document.getElementById("colorBtn");
 const textBtn = document.getElementById("textBtn");
 const message = document.getElementById("message");
 const nameInput = document.getElementById("nameInput");
+const title = document.getElementById("title");
 
-// 1) Manipulate CSS property
+// CSS manipulation & 1st event listener
 colorBtn.addEventListener("click", () => {
   document.body.style.backgroundColor =
-    document.body.style.backgroundColor === "lightblue"
-      ? "#f0f0f0"
-      : "lightblue";
+    document.body.style.backgroundColor === "rgb(26, 26, 26)"
+      ? "rgba(15, 12, 35, 1)"
+      : "rgb(26, 26, 26)";
 });
 
-// 2) Manipulate non-CSS property (innerText)
+// Non-CSS manipulation & 1st event listener
 textBtn.addEventListener("click", () => {
   message.innerText =
-    message.innerText === "Click the button to change me."
-      ? "The text has changed!"
-      : "Click the button to change me.";
+    message.innerText === "Welcome to the DOM"
+      ? "The DOM welcomes you!"
+      : "Welcome to the DOM";
 });
 
-// 3) Another event listener (input event)
+// 2nd event listener
 nameInput.addEventListener("input", () => {
-  message.innerText = `Hello, ${nameInput.value || "stranger"}!`;
+  title.innerText = nameInput.value
+    ? nameInput.value.toUpperCase()
+    : "INTERACT";
 });
