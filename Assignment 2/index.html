@@ -3,34 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Currency Converter Game</title>
+    <title>Dragon Ball Z Character Finder</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="container">
-      <h1>Currency Converter Game</h1>
-      <p>Enter an amount</p>
+      <h1>Dragon Ball Z Character Finder</h1>
+      <p>Select a race and reveal a random warrior!</p>
 
-      <div class="form-area">
-        <input
-          type="number"
-          id="amountInput"
-          placeholder="Amount (e.g., 100)"
-        />
-        <input
-          type="text"
-          id="sourceInput"
-          placeholder="Source currency (e.g., inr)"
-        />
-        <input
-          type="text"
-          id="targetsInput"
-          placeholder="Target currencies (e.g., usd, eur, jpy)"
-        />
-        <button id="convertButton">Convert</button>
+      <div class="controls">
+        <select id="raceSelect">
+          <option value="">-- Select Race --</option>
+          <option value="Saiyan">Saiyan</option>
+          <option value="Human">Human</option>
+          <option value="Namekian">Namekian</option>
+          <option value="Frieza Race">Frieza Race</option>
+          <option value="Android">Android</option>
+          <option value="Majin">Majin</option>
+          <option value="God">God</option>
+          <option value="Angel">Angel</option>
+          <option value="Evil">Evil</option>
+          <option value="Unknown">Unknown</option>
+        </select>
+        <button id="randomBtn">⚡ Show Random Character</button>
       </div>
 
-      <div id="resultsArea" class="results"></div>
+      <div id="characterArea"></div>
     </main>
 
     <footer>
