@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Currency Converter Game</h1>
+      <p>Enter an amount</p>
+
+      <div class="form-area">
+        <input
+          type="number"
+          id="amountInput"
+          placeholder="Amount (e.g., 100)"
+        />
+        <input
+          type="text"
+          id="sourceInput"
+          placeholder="Source currency (e.g., inr)"
+        />
+        <input
+          type="text"
+          id="targetsInput"
+          placeholder="Target currencies (e.g., usd, eur, jpy)"
+        />
+        <button id="convertButton">Convert</button>
+      </div>
+
+      <div id="resultsArea" class="results"></div>
+    </main>
+
+    <footer>
+      <p>Assignment 2: APIs and JSON</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
