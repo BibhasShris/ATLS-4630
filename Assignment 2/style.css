@@ -17,8 +17,8 @@ body {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #ff9800;
-  text-shadow: 0 0 10px #ff5722, 0 0 20px #ff9800;
+  color: #ffbf00;
+  text-shadow: 2px 2px 5px #ff1100;
 }
 
 p {
