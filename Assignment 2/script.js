@@ -2,7 +2,7 @@ const raceSelect = document.getElementById("raceSelect");
 const randomBtn = document.getElementById("randomBtn");
 const characterArea = document.getElementById("characterArea");
 
-// Fetch characters by race
+// Fetching characters by race
 async function fetchByRace(race) {
   const url = `https://dragonball-api.com/api/characters?race=${encodeURIComponent(
     race
@@ -23,7 +23,7 @@ async function fetchByRace(race) {
   }
 }
 
-// Show character in a styled card
+// Showing character in a card
 function showCharacter(char) {
   characterArea.innerHTML = `
     <div class="card">
